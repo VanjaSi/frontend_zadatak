@@ -1,0 +1,31 @@
+
+ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+ul li{
+    cursor: auto;
+}
+
+ul.subgroup{
+    display: none;
+}
+
+li.show > ul{
+    display: block;
+}
+
+li.arrow-right{
+    cursor: pointer;
+}
+
+li.arrow-right::before{
+    font-family:'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0da       ';
+}
+
+li.show::before{
+    content: '\f0d7      ';
+   }
